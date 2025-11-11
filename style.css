@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing {
+  padding: 40px 30px;
+  text-align: center;
+  margin-top: 80px;
+  border-radius: 20px;
+  width: 80%;
+  height: 60vh;
+  background: white;
+}
+
+#typing-text {
+  white-space: pre-line;
+  font-family: monospace;
+  position: relative;
+}
+
+.inactive {
+  opacity: 0.3;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: black;
+  animation: blink 0.8s infinite;
+  vertical-align: bottom;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
